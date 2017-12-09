@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   end
 
   def authors
+    
   end
 
   def titles

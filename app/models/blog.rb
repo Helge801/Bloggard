@@ -1,3 +1,3 @@
 class Blog < ApplicationRecord
-  belongs_to :Author
+  belongs_to :author
 end
