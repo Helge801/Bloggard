@@ -1,3 +1,15 @@
 // Place all the styles related to the Blogs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.blog_div {
+  margin: 20px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #478bf7;
+  border-radius: 3px;
+}
+
+.blog_div:hover { 
+  background-color: #f9f9f9;
+}
