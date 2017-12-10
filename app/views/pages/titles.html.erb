@@ -1,6 +1,6 @@
 <h1 class="page_title">Titles</h1>
 <hr>
 
-<% @blogs.each do |blog| %>
-  <div><%= link_to blog.title, blog %></div>
+<% @blogs.sort_by {|b| b.title}.each do |blog| %>
+  <div class="title_item"><%= link_to blog.title, blog %></div>
 <% end %>
