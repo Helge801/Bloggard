@@ -5,3 +5,46 @@
 .page_title {
   color: #478bf7;
 }
+
+.author_div {
+  margin: 30px 10px 30px 10px;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.title_div {
+/*  display: inline-block;
+  flex-wrap: wrap;
+  width: fit-content;*/
+  margin: 10px;
+}
+
+.title_div a {
+  color: #478bf7;
+  text-decoration: none;
+/*  padding: 5px;
+  border-radius: 3px;
+  background-color: #478bf7;*/
+
+}
+
+.author_head_div {
+  background-color: #478bf7;
+  border-radius: 3px;
+  color: white;
+  padding: 15px;
+}
+
+.author_head_div div {
+  display: inline-block;
+  font-size: 2em;
+}
+
+.author_head_div div span {
+  font-size: 0.3em;
+  margin-left: 20px;
+}
+
+
+
+

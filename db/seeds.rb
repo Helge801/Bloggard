@@ -13,7 +13,7 @@ Author.create name:"Guest"
   Author.create name:"#{RandomWordGenerator.word} #{RandomWordGenerator.word}"
 end
 
-20.times do |i|
+30.times do |i|
   Blog.create(title:(Array.new(3) {RandomWordGenerator.word}.join(" ")) ,
               sub_title:(Array.new(4) {RandomWordGenerator.word}.join(" ")),
               subject:(Array.new(1) {RandomWordGenerator.word}.join(" ")),

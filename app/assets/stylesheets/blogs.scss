@@ -10,6 +10,41 @@
   border-radius: 3px;
 }
 
-.blog_div:hover { 
-  background-color: #f9f9f9;
+.blog_div a {
+  text-decoration: none;
+  color: #478bf7;
+}
+
+.blog_div a:hover {
+  color: lightgrey;
+}
+
+#show_blog_div {
+    margin: 20px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #478bf7;
+  border-radius: 3px;
+}
+
+#show_blog_div div h2 {
+  display: inline-block;
+}
+
+#show_blog_div div h4 {
+  display: inline-block;
+  margin-left: 50px; 
+}
+
+#show_blog_div div {
+  background-color: #478bf7;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#show_blog_div div a{
+  color: white;
+  text-decoration: none;
 }
