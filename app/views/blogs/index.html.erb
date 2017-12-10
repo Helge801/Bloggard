@@ -1,14 +1,13 @@
-<h1>Blogs</h1>
-<h3>This is the blogs page</h3>
+<h1 class="page_title">Blogs</h1>
+<hr>
 <p><%= link_to 'New Blog Post', new_blog_path %></p>
 
-<hr>
 
   <% @blogs.each do |blog| %>
-    <div>
-      <h1><%= link_to blog.title, blog %></h1>
-      <h2><%= blog.sub_title %></h2>
-      <h3><%= blog.subject %></h3>
-      <p><%= blog.body.slice(0..40) + "...." %></p>
-    </div>
+      <div class="blog_div">
+        <h1><%= link_to blog.title, blog %></h1>
+        <h2><%= blog.sub_title %></h2>
+        <h3><%= blog.subject %></h3>
+        <p><%= blog.body.slice(0..40) + "...." %></p>
+      </div>
   <% end %>
