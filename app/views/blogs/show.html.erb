@@ -1,0 +1,10 @@
+<h1>Blog show page</h1>
+<%= link_to 'Back to blogs', blogs_path %>
+<div>
+<h1><%= "#{@blog.title} "%><h4><em><%= "-by #{@blog.author.name}" %></em></h4></h1>
+<h2><%= @blog.sub_title %></h2>
+<h3><%= @blog.subject %></h3>
+<p><%= @blog.body %></p>
+<%= link_to "Edit", edit_blog_path(@blog) %>
+<%= link_to "Delete", blog_path(@blog), method: :delete, data: {confirm: 'are you sure you want to delete this blog?'} %>
+<div>
