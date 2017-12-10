@@ -1,0 +1,35 @@
+<h1>Edit Blog</h1>
+
+<% blog = @blog %>
+<%= form_with(model: blog, local: true) do |f| %>
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title, id: :blog_title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sub_title %>
+    <%= f.text_field :sub_title, id: :blog_sub_title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :subject %>
+    <%= f.text_field :subject, id: :blog_subject %>
+  </div>
+
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.text_area :body, id: :blog_body %>
+  </div>
+
+<!-- This should be set auto based on the logged in user -->
+<!--     <div class="field">
+    <%= f.label :author_id %>
+    <%= f.text_field :author_id, id: :blog_author_id %>
+  </div> -->
+
+  <div class="action">
+    <%= f.submit %>
+  </div>
+
+  <% end %>

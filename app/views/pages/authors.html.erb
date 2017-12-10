@@ -1,2 +1,12 @@
-<h1>Pages#authors</h1>
+<h1>Authors</h1>
 <p>Find me in app/views/pages/authors.html.erb</p>
+
+<% @authors.each do |auth| %>
+  <div><%= auth.name %></div>
+  <div><%= "Blogs: #{auth.blog.count}" %></div>
+  <div>
+    <% auth.blog.each do |blog| %>
+      <div><%= link_to blog.title, blog %></div>
+    <% end %>
+  </div>
+<% end %>
