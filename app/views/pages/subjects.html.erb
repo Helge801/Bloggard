@@ -1,7 +1,7 @@
 <h1 class="page_title">Subjects</h1>
 <hr>
 <div>
-<% @blogs.each do |blog| %>
-  <h2><%= link_to blog.subject, blog%></h2>
+<% @blogs.sort_by {|b| b.subject}.each do |blog| %>
+  <div class="title_item"><%= link_to blog.subject, blog%></div>
 <% end %>
 </div>
